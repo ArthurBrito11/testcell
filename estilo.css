@@ -1,0 +1,706 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #304268;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#visita {
+    color: #F6F7F8;
+    width: 100%;
+    height: 35px;
+    background-color: #33415E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+#visita a {
+    color: #75B2DB;
+    text-decoration: none;
+    pointer-events: auto;
+    z-index: 20;
+}
+
+#visita a:hover {
+    color: #258fd6;
+}
+
+#topo{
+    width: 100%;
+    height: 20vw;
+    background-color: #38B6FF;
+}
+
+.logo{
+    max-width:800vw;
+    max-height:850vw;
+    position: relative;
+    bottom: 20px;
+}
+
+.minhaconta {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -12vw;
+
+}
+
+.minhaconta a {
+    display: block;
+    z-index: 20; 
+}
+
+.minhaconta img{
+    width: 20vw;
+}
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    margin-top: -6vw;
+    
+}
+
+input::placeholder {
+    color: #313131;
+}
+.input-wrapper{
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #ff04711f;
+    border-radius: 16px;
+    width: 80%; 
+    max-width: 600px; 
+    min-width: 200px; 
+}
+
+.input-wrapper i {
+    color: #000000;
+    cursor: pointer;
+    
+}
+
+.input-wrapper input{
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    width: 500px;
+}
+
+.input-wrapper input:focus-visible{
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .input-wrapper input {
+        width: 80%; 
+    }
+
+    .pesquisa {
+        flex-direction: column; 
+        padding: 0 2%; 
+    }
+}
+
+
+
+.background{
+    background-image: url(imagens/papel\ amassado.png);
+    background-size: cover;
+    height: 30vw;
+    background-repeat: no-repeat;
+}
+
+#menu img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+#menu li:hover{
+        transform: translateY(-15px);
+}
+
+#menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type:none;
+    padding-top: 8vw;
+
+}
+
+#menu li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    width: 200px; 
+    background-color: rgba(255, 255, 255, 0.158);
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+#menu a{
+    color: #2200FF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+#banner{
+    background-image: url(imagens/CRIATIVA.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.verde{
+   color: #06EB5E;
+}
+
+.areafrete {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    background-color: #192E51;
+    height: 180px;
+    padding: 20px 0; 
+}
+
+.item {
+    display: flex; 
+    align-items: center;
+    gap: 15px; 
+    color: white; 
+    text-align: left; 
+}
+
+.item img {
+    width: 60px; 
+    height: auto;
+}
+ 
+.texto{
+    position: relative;
+    bottom: 10px;
+}
+
+.vendabanner{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+.textovenda {
+    font-size: 40px;
+    transform: rotate(-5deg);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 250px;
+}
+
+
+.containerr {
+    position: relative;
+    bottom: 80px;
+    width: 80vw;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center; 
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; 
+    justify-content: center;
+}
+
+.product {
+    position: relative;
+    width: 300px; 
+    background-color: rgba(81, 95, 126, 0.205);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.product:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.namePrice h3 {
+    font-size: 16px;
+    color: #bee7ff;
+    margin: 10px 0;
+}
+
+.namePrice span {
+    font-size: 1.5em;
+    color: #06eb5e;
+}
+
+.buy img {
+    width: 100%; 
+}
+
+.buy button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy button:hover {
+    transform: scale(1.1);
+}
+
+#fundo {
+    position: relative; 
+    width: 100%; 
+    max-width: 100%; 
+    height: auto;
+}
+
+#fundo img {
+    display: block;
+    width: 100%; 
+    height: auto;
+}
+
+.principais {
+    position: absolute;
+    top: 80px; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    pointer-events: none; 
+}
+
+.marcas{
+    display: flex;
+    position:relative;
+    bottom: 430px; 
+    height: 100px;
+    justify-content: space-around;
+}
+
+.infosdaniela {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%; 
+    max-width: 100%;
+    bottom: 360px;
+}
+
+.fundo2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.textos {
+    position: relative;
+    flex: 1 1 50%; 
+    padding: 20px;
+    color: white;
+    text-align: left;
+    margin-top: -1200px
+}
+
+.textos p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.textos h3 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.textos h2 {
+    font-size: 38px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.vermelho {
+    color: #FF2626;
+}
+
+#daniela {
+    position: relative;
+    flex: 1 1 30%; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: -1200px
+}
+
+#daniela img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #0047ab; 
+    color: white;
+    padding: 20px 50px;
+}
+
+.rodape .coluna {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.rodape h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.rodape p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.rodape ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rodape ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.rodape ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.rodape ul li a:hover {
+    text-decoration: underline;
+}
+
+.rodape .redes-sociais a img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.rodape .redes-sociais h3{
+    margin-left: 29px;
+}
+
+.rodape .redes-sociais a img:hover{
+    opacity: 0.8;
+}
+.paragrafo{
+    position: relative;
+    right: 14px;
+    margin-right: 30px;
+    padding-right: 50px;
+    line-height: 1.6; 
+    text-align: center;
+}
+
+.finalufa{
+    width: 100%;
+    height: 100px;
+    background-color: #47577F;
+}
+
+.finalufa p{
+    position:relative;
+    color: white;
+    top: 80px;
+    padding-left: 10px;
+}
+
+/* Ajustes gerais para imagens e containers */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container, .containerr {
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Responsividade para dispositivos móveis (telas pequenas) */
+@media (max-width: 768px) {
+    /* Logo */
+
+    .background{
+        background-size: cover;
+         height: 30vw;
+         background-repeat: no-repeat;
+
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .logo img{
+        max-width: 40vw;
+        width: 25vw;
+        padding-top: 1vw;
+    }
+
+    /* Cabeçalho */
+    .minhaconta {
+        position: absolute;
+        
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    /* Pesquisa */
+    .pesquisa {
+        width: 70vw;
+        position: absolute;
+        bottom: 84%;
+        left: 18%;
+    }
+
+    .input-wrapper {
+        width: 100%;
+    }
+
+    /* Menu */
+
+    #menu img{
+        width: 40vw;
+        height: 40vw;
+    }
+
+    #menu ul {
+        display: flex;
+        padding: 0;
+        gap: 10px;
+        padding-top: 6vw ;
+    }
+
+    #menu li a{
+        font-size: 10px;
+    }
+
+    #menu li {
+        width: 23vw;
+        height: 20vw;
+        justify-content: center;
+    }
+
+    /* Área de Frete */
+    .areafrete {
+        height: 55vw;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item img {
+        width: 50px; 
+    }
+
+    .item {
+        margin-bottom: 10px;
+    }
+
+    .textovenda{
+        font-size: 7vw;
+        margin-top: 18vw;
+    }
+
+    .vendabanner{
+        height: 80vw;
+
+    }
+
+    #banner {
+        height: 300px;
+        background-size: cover;
+    }
+
+    /* Marcas */
+    .marcas {
+       margin-top: 85vw;
+       height: 10vw;
+        
+        
+    }
+    
+    .marcas img {
+        max-width: 150vw; /* Ajuste conforme necessário */
+        height: auto;
+    }
+    
+    
+    /* Informações sobre a Daniela */
+ 
+    #daniela img{
+        margin-top: 110vw;
+        
+    }
+
+
+    .fundo2 img{
+        height: 150vw;
+        margin-top: -22vw;
+    }
+
+    .textos {
+        text-align: center;
+        padding: 10px;
+        margin-top: -156vw;
+    }
+
+    .textos p{
+        line-height: 1;
+        font-size: 12px;
+    }
+
+    .textos h3 {
+        font-size: 18px;
+    }
+
+    .textos h2 {
+        font-size: 22px;
+    }
+
+    /* Rodapé */
+    .rodape {
+        flex-direction: column;
+        padding: 10px;
+        
+    }
+    
+    .rodape .coluna {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .rodape .redes-sociais {
+        margin-top: 10px;
+    }
+
+    .rodape .redes-sociais a img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .rodape .redes-sociais h3 {
+        font-size: 18px;
+        margin-left: 0;
+    }
+    .finalufa{
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ajustes para telas muito pequenas (por exemplo, celulares em modo retrato) */
+@media (max-width: 480px) {
+    .logo {
+        max-width: 60%;
+    }
+
+    .minhaconta {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .input-wrapper input {
+        font-size: 16px;
+    }
+
+    .namePrice h3 {
+        font-size: 14px;
+    }
+
+    .namePrice span {
+        font-size: 1.4em;
+    }
+
+    .rodape {
+     padding: 10px;
+     flex-direction: column;
+    }
+
+    .rodape .coluna {
+        margin-bottom: 10px;
+    }
+
+    .rodape .redes-sociais a img {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+}
